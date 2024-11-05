@@ -19,9 +19,3 @@ void test_compute_moving_average() {
     float moving_average = compute_moving_average(numbers, 5, 3);
     assert(moving_average == 2.0);
 }
-
-
-
-
-
-

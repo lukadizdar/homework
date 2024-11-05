@@ -7,7 +7,7 @@ TEST_EXEC = $(patsubst test/%.c, %, $(TEST_SRC))
 main.elf: $(OBJ)
 	gcc $^ -o $@
 %.o: %.c
-	gcc -c $< -I $(INC) -o $@
+	gcc -c $^ -I $(INC) -o $@
 $(TEST_EXEC): %: test/%.o $(OBJ)
 	gcc $^ -I $(INC) -o $@
 run_tests: $(TEST_EXEC)
