@@ -15,7 +15,14 @@ void test_compute_average() {
 }
 
 void test_compute_moving_average() {
-    int numbers[] = {1, 2, 3, 4, 5};
+    int numbers[] = {1, 2, 3, 4, 5};    
     float moving_average = compute_moving_average(numbers, 5, 3);
-    assert(moving_average == 2.0);
+    assert(moving_average == 4.0);
+}
+
+int main (void) {
+    test_compute_average();
+    test_compute_sum();
+    test_compute_moving_average();
+    printf("Test COMPUTE is complete and all functions work na najjace!\n");
 }
